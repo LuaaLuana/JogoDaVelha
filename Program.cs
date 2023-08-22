@@ -70,6 +70,7 @@ namespace JogoDaVelha
             else
             {
                 Console.WriteLine("Impossível marcar nesta casa, tente outra.");
+                Jogador();
             };
 
             Rodada();
