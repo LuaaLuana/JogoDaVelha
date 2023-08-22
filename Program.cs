@@ -223,6 +223,22 @@ namespace JogoDaVelha
                 Console.WriteLine("Que pena, você perdeu!");
                 Console.ReadLine();
             }
+            
+            if (Velha())
+            {
+                Console.WriteLine("Deu Velha! O jogo acabou em um empate.");
+                Console.ReadLine();
+            }
+        }
+
+        static bool Velha()
+        {
+            foreach (var cell in matriz)
+            {
+                if (cell == "[ ]")
+                    return false;
+            }
+            return true;
         }
     }
 }
